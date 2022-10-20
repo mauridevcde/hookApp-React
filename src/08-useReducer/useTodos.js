@@ -7,7 +7,7 @@ const init = () => {
 
 
 export const useTodos = () => {
-    
+
     const [todos, dispatch] = useReducer(todoReducer, [], init);
 
     useEffect(() => {
@@ -42,9 +42,10 @@ export const useTodos = () => {
         dispatch(action);
     }
 
-
     return {
         todos,
+        todosCount:todos.length,
+        pendingTodoCount:todos.filter((todo) => !todo.done).length,
         handleNewTodo,
         handleDeleteTodo,
         handleToggleTodo,

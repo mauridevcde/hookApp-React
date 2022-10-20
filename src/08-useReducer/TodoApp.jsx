@@ -4,12 +4,12 @@ import { useTodos } from "./useTodos";
 
 export const TodoApp = () => {
   
-  const { todos, handleNewTodo, handleDeleteTodo, handleToggleTodo } =  useTodos();
+  const { todos, todosCount , pendingTodoCount , handleNewTodo, handleDeleteTodo, handleToggleTodo } =  useTodos();
 
   return (
     <>
       <h1>
-        TodoApp: 10, <small>pendiente: 2</small>
+        TodoApp: {todosCount}, <small>pendiente: {pendingTodoCount}</small>
       </h1>
 
       <hr />
