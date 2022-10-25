@@ -1,22 +1,16 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { FormWhitCustomHook } from './02-useEffect/FormWhitCustomHook'
-import { MultipleCustomHooks } from './03-examples/MultipleCustomHooks'
-import { FocusScreen } from './04-useRef/FocusScreen'
-import { Layout } from './05-useLayoutEffect/layout'
-import { CallbackHook } from './06-memos/CallbackHook'
-import MemoHook from './06-memos/MemoHook'
-import Memorize from './06-memos/Memorize'
-import { Padre } from './07-tareaMemo/Padre'
-import { TodoApp } from './08-useReducer/TodoApp'
-import {HookApp} from './HookApp'
+import { MainApp } from './09-useContext/MainApp'
+import { BrowserRouter } from 'react-router-dom'
 import './index.css'
-//import './08-useReducer/intro-reducer'
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   //<React.StrictMode>
-    <TodoApp />
+    <BrowserRouter>
+      <MainApp />
+    </BrowserRouter>
   
   //</React.StrictMode>
 )
