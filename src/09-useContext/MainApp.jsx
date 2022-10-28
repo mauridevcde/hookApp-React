@@ -6,9 +6,11 @@ import { LoginPage } from "./LoginPage";
 import { NavBar } from "./NavBar";
 
 export const MainApp = () => {
+  
+  
   return (
     <UserProvider>
-
+    
       <NavBar />
       <hr />
       <Routes>
@@ -19,6 +21,7 @@ export const MainApp = () => {
         {/* <Route path="*" element={<h1>404 Not Found</h1>} /> */}
         <Route path="*" element={<Navigate to={"/about"} />} />
       </Routes>
+
     </UserProvider>
   );
 };
