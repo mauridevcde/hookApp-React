@@ -9,11 +9,11 @@ export const LoginPage = () => {
       <h1>Login Page</h1>
       <hr />
 
-      <pre>{JSON.stringify(user, null, 3)}</pre>
+      <pre aria-label="pre">{ JSON.stringify( user, null, 3 ) }</pre>
 
       <button className="btn btn-primary"
-        onClick={() => setuser({ id: 123, name: "Fernando" })}
-      > Loguear</button>
+        onClick={() => setuser({ id: 1, name: "Mauricio" })}
+      >Loguear</button>
     </>
   );
 };
